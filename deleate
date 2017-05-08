@@ -1,0 +1,13 @@
+本文档主要讲述删除功能
+
+1、如何删除 repository
+
+settings中有Delete this repository
+
+2、如何删除branches中不是master部分
+
+有待解决
+
+3、如何删除文档。
+
+进入文档后最右面有删除按钮，即可删除。然后点击commit
