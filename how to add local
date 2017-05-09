@@ -1,0 +1,70 @@
+[github上传本地项目](http://www.cnblogs.com/specter45/p/github.html#s4)
+
+ 1、绑定用户：
+ 
+ 步骤：运行 git-bash，
+ 
+ 绑定用户名：输入 git config -- user.name "你的github名称"
+ 
+ 绑定邮箱：git config -- user.email "你的github名称"
+ 
+ ps：git config  –global 参数，有了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然你也可以对某个仓库指定的不同的用户名和邮箱。
+
+2、设置SSH key
+
+  A\生成ssh key
+
+    首先检查是否已生成密钥 cd ~/.ssh，ls如果有3个文件，则密钥已经生成
+
+    或者也可以打开我的电脑C:\Users\specter\.ssh 里面找到
+
+     如果没有生成，那么通过$ ssh-keygen -t rsa -C “你的邮箱”来生成。
+
+     1）是路径确认，直接按回车存默认路径即可
+
+     2）直接回车键，这里我们不使用密码进行登录, 用密码太麻烦;
+
+    3）直接回车键
+    
+    生成成功后，去对应目录C:\Users\specter\.ssh里（specter为电脑用户名，每个人不同）用记事本打开id_rsa.pub，得到ssh key公钥
+
+  B\为github账号配置设置ssh keyssh key
+  
+  切换到github，展开个人头像的小三角，点击settings
+  
+  左边列表中有 SSH keys 进行设置：点击Add SSH key新增密钥，填上标题，跟仓库保持一致吧，好区分。
+  接着将id_rsa.pub文件中key粘贴到此，最后Add key生成密钥吧。
+  
+  3、上传本地文件到github
+  
+  3-1、创建本地项目：abc
+  
+  3-2、建立本地仓库
+  
+  首先进入到abc项目目录 cd d:
+  
+         cd abc/
+         
+  然后执行命令：git init
+  
+  然后执行命令：git add .（如果提交某个文件可以把.替换为该文件）
+  
+  执行命令：git commit -m"双引号内提交注释"
+  
+  3-3、关联github仓库
+  
+  到github中建立仓库abc 
+  
+  然后到abc仓库中复制仓库地址SSH
+  
+  然后执行指令：git remote add origin 复制的地址
+  
+  3-4、上传本地代码
+  
+  执行指令：git push -u origin master
+  
+ 然后yes,回车
+ 
+ 添加成功啦
+ 
+ PS:git是不能管理空的文件夹的，文件夹里必须有文件才能add
