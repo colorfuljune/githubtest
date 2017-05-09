@@ -1,0 +1,38 @@
+github中每一个名称的含义及用途
+
++下的内容
+
++new repository 建立新仓库
+
++import repository 导入仓库（可以是其他的，如果是github上的仓库，建议使用fork）
+
++new gist 建立新要点（翻墙才能上）
+gist：程序员用来记录代码片段。
+Gist只能用纯文本来写，但是您可以用markdown来发布html格式的Gist。
+您可以添加列表、图片（已有图床上的）和表格。当您用markdown的时候不要忘了文件名要以.md为后缀
+
++new organization 建立新组织（需要新成员时可以建立）
+有公开，和隐私 两个选择
+
+图像下三角的内容：
+
+1、your profile
+overview：
+展示出你的repositories，即你的仓库
+展示出近12个月你在github上的活跃度
+
+2、your stars
+你的明星项目的展示。
+
+3、explore
+去发现github项目
+
+4、integration
+其他推荐的软件（我也不确定）
+
+5、help
+
+6 settings
+设置账号信息等内容
+7、sign out
+退出
