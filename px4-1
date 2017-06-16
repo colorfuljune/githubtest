@@ -1,0 +1,51 @@
+09:30:06 **** Build of configuration Default for project Firmware ****
+make all 
+-- CMAKE_MODULE_PATH: D:/px4/Firmware/cmake
+-- Build Type: RelWithDebInfo
+-- PX4 VERSION: v1.6.2-60-g5a96490
+-- CONFIG: posix-sitl-default
+-- CMAKE_INSTALL_PREFIX: /usr
+-- The CXX compiler identification is GNU 4.6.2
+-- The C compiler identification is GNU 4.6.2
+-- The ASM compiler identification is GNU
+-- Found assembler: D:/px4/toolchain/bin/gcc.exe
+-- Check for working CXX compiler: D:/px4/toolchain/bin/g++.exe
+-- Check for working CXX compiler: D:/px4/toolchain/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check for working C compiler: D:/px4/toolchain/bin/gcc.exe
+-- Check for working C compiler: D:/px4/toolchain/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found PythonInterp: D:/px4/Python27/python.exe (found version "2.7.3") 
+CMake Error at D:/Program Files/CMake/share/cmake-3.4/Modules/FindPackageHandleStandardArgs.cmake:148 (message):
+  couldn't find python module jinja2:
+
+  		
+
+  for debian systems try: 		
+
+  	sudo apt-get install python-jinja2 		
+
+  or for all other OSs/debian: 		
+
+  	pip install jinja2
+
+   (missing:  PY_JINJA2) 
+Call Stack (most recent call first):
+  D:/Program Files/CMake/share/cmake-3.4/Modules/FindPackageHandleStandardArgs.cmake:388 (_FPHSA_FAILURE_MESSAGE)
+  cmake/common/px4_base.cmake:622 (find_package_handle_standard_args)
+  CMakeLists.txt:293 (px4_find_python_module)
+
+
+-- Configuring incomplete, errors occurred!
+See also "D:/px4/Firmware/build_posix_sitl_default/CMakeFiles/CMakeOutput.log".
+rm: cannot remove directory `/d/px4/Firmware/build_posix_sitl_default': Permission denied
+make: *** [posix_sitl_default] Error 1
+
+09:31:44 Build Finished (took 1m:37s.453ms)
+
