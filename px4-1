@@ -1,4 +1,4 @@
-09:30:06 **** Build of configuration Default for project Firmware ****
+09:53:16 **** Build of configuration Default for project Firmware ****
 make all 
 -- CMAKE_MODULE_PATH: D:/px4/Firmware/cmake
 -- Build Type: RelWithDebInfo
@@ -22,6 +22,8 @@ make all
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Found PythonInterp: D:/px4/Python27/python.exe (found version "2.7.3") 
+-- Configuring incomplete, errors occurred!
+See also "D:/px4/Firmware/build_posix_sitl_default/CMakeFiles/CMakeOutput.log".
 CMake Error at D:/Program Files/CMake/share/cmake-3.4/Modules/FindPackageHandleStandardArgs.cmake:148 (message):
   couldn't find python module jinja2:
 
@@ -42,10 +44,8 @@ Call Stack (most recent call first):
   CMakeLists.txt:293 (px4_find_python_module)
 
 
--- Configuring incomplete, errors occurred!
-See also "D:/px4/Firmware/build_posix_sitl_default/CMakeFiles/CMakeOutput.log".
 rm: cannot remove directory `/d/px4/Firmware/build_posix_sitl_default': Permission denied
 make: *** [posix_sitl_default] Error 1
 
-09:31:44 Build Finished (took 1m:37s.453ms)
+09:56:01 Build Finished (took 2m:45s.188ms)
 
